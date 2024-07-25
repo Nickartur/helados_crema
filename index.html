@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Esta linea es para el navegador    -->
+    <title>Tienda de Helados de Crema</title> <!-- agrega titulo a la pestaña de la pag-->
+    <meta charset="UTF-8"> <!-- para tildes y otras cosas español?, sino mostrara simbolos-->
+    <style>
+        header {
+            /* Este es un comentario en CSS */
+            background-color: #345245;
+            /*hexagecimal 6 caracteres */
+            /*  background: white;
+        color: rgb(red, green, blue);
+        color: rgba(red, green, blue, alpha); color transparente, esa A del rgba de alfa 
+        color: #ccc; hexagecimal 3 caracteres, equivalente de a 2 osea #cccccc */
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        main {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            /*  box-shadow: 4px 4px 8px rbga(0,0,0.8); */
+            -webkit-box-shadow: 18px -9px 5px 0px rgba(82, 66, 82, 0.77);
+            -moz-box-shadow: 18px -9px 5px 0px rgba(82, 66, 82, 0.77);
+            box-shadow: 18px -9px 5px 0px rgba(82, 66, 82, 0.77);
+
+        }
+
+        body {
+            background: #f4f4f4;
+            /* solo cuando trabajamos con imagenes el background mejor este*/
+        }
+
+        nav {
+            background: #EF5A6F;
+            display: flex;
+            /*organizar hijos de nav, los enlaces, vertical o horizontal, etc */
+            justify-content: center;
+            /* se ve a la derecha, con center se va al centro */
+        }
+
+        nav a {
+            /*selector de padre a hijo */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Esta linea es para el usuario    -->
+    <header>
+        <h1>Helados de crema</h1>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+    <main>
+        <h2>Acerca de nosotros</h2> <!-- existen h hasta el h6 -->
+        <img width="100" alt="Helados de 'crema'" src="https://cdn-icons-png.flaticon.com/512/5976/5976353.png" />
+        <p>
+            Somos una empresa dedicada a ofrecer los mejores servicios en desarrollo web. Nuestro equipo está
+            comprometido
+            con la calidad y la satisfacción del cliente.
+        </p>
+        <h3>Nuestros Servicios </h3>
+        <p>Ofrecemos una amplia gama de servicios, incluyendo diseño web, desarrollo de aplicaciones, y soluciones de
+            marketing digital. Estamos aquí para ayudarte a alcanzar tus objetivos.
+        </p>
+        <h4>Contáctanos</h4>
+        <p>Si tienes alguna pregunta o necesitas más información, no dudes en <a href="#">contactarnos</a>. Estamos aquí
+            para ayudarte. </p>
+    </main>
+    <footer style="background: #333; color: white; text-align: center; padding: 10px;">
+        <p>&copy; 2024 Helados RícoRicó. Todos los derechos reservados</p>
+        <!-- no es buena práctica lo del style en footer, se debe hacer en head -->
+    </footer>
+</body>
+
+</html>
