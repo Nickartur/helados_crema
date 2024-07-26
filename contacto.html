@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        input[type="text"], input[type="email"], select { /*filtrar CSS exclusivo para tipo texto y email,
+            así no afectar a los botones de pago que son tipo radius */
+            
+            background: white;
+            height: 30px;
+            /* altura */
+            border-radius: 6px;
+            /* Borde redondeado */
+            border: 1px solid #cf2626;
+            /* Borde gris */
+            margin-bottom: 15px;
+            /* Margen inferior, separación */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            /* Negrita */
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            /* Tamaño de letra */
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre" />
+
+        <label for="apellido">Apellidos:</label>
+        <input type="text" id="apellido" placeholder="Ingrese sus apellidos" />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Ingrese su email" />
+
+        <label for="servicio">Seleccione servicio:</label>
+        <select id="servicio">
+            <!-- <select id="servicio" multiple style="height: 50px;">  mejor checkbox para seleccionar varias opciones -->
+            <option value="1">Preparado de helados de chocolate</option>
+            <option value="2">Preparado de helado de fresa</option>
+            <option value="3">Preparado de helado de vainilla</option>
+        </select>
+        <label for="mensaje">Extras para tu servicio:</label>
+        <textarea id="mensaje"></textarea>
+
+        <label>Pago al contado <input type="radio" value="CONT" name="tipo_pago"></label>
+        <label>Pago con tarjeta <input type="radio" value="TAR" name="tipo_pago"></label>
+
+    </form>
+</body>
+
+</html>
